@@ -12,22 +12,19 @@ This is my personal portfolio website. It showcases my projects, skills, and con
 
 ## Screenshots
 
-![Screenshot 1](Screenshot 2024-06-16 002156.png)
+![Screenshot 1](screenshots/Screenshot1.png)
 ![Screenshot 2](screenshots/screenshot2.png)
-![Screenshot 3](screenshots/screenshot3.png)
 
 ## Contact Form
 
 The contact form submissions are stored in an Excel sheet using a backend script.
+![Screenshot 3](screenshots/Screenshot3.png)
+![Screenshot 4](screenshots/Screenshot4.png)
+![Screenshot 5](screenshots/Screenshot5.png)
 
-## Social Media
-
-You can find me on:
-- [LinkedIn](your-linkedin-profile)
-- [Twitter](your-twitter-profile)
-- [GitHub](your-github-profile)
 
 ## Download CV
 
-You can download my CV [here](cv/your-cv.pdf).
+You can download my CV from the website.
+![Screenshot 6](screenshots/Screenshot6.png)
 
