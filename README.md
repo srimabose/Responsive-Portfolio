@@ -14,6 +14,7 @@ This is my personal portfolio website. It showcases my projects, skills, and con
 
 ![Screenshot 1](screenshots/Screenshot1.png)
 ![Screenshot 2](screenshots/screenshot2.png)
+![Screenshot 7](screenshots/Screenshot7.png)
 
 ## Contact Form
 
