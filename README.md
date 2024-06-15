@@ -12,20 +12,20 @@ This is my personal portfolio website. It showcases my projects, skills, and con
 
 ## Screenshots
 
-![Screenshot 1](screenshots/Screenshot1.png)
-![Screenshot 2](screenshots/screenshot2.png)
-![Screenshot 7](screenshots/Screenshot7.png)
+![Screenshot 1](Screenshot1.png)
+![Screenshot 2](Screenshot2.png)
+![Screenshot 7](Screenshot7.png)
 
 ## Contact Form
 
 The contact form submissions are stored in an Excel sheet using a backend script.
-![Screenshot 3](screenshots/Screenshot3.png)
-![Screenshot 4](screenshots/Screenshot4.png)
-![Screenshot 5](screenshots/Screenshot5.png)
+![Screenshot 3](Screenshot3.png)
+![Screenshot 4](Screenshot4.png)
+![Screenshot 5](Screenshot5.png)
 
 
 ## Download CV
 
 You can download my CV from the website.
-![Screenshot 6](screenshots/Screenshot6.png)
+![Screenshot 6](Screenshot6.png)
 
