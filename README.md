@@ -1,7 +1,7 @@
 # Responsive-Portfolio
 # Portfolio Website
 
-This is my personal portfolio website. It showcases my projects, skills, and contact information. The website is built using HTML and CSS and is fully responsive.
+This is my personal portfolio website. It showcases my projects, skills, and contact information. The website is built using HTML, CSS and Javascript and is fully responsive.
 
 ## Features
 
