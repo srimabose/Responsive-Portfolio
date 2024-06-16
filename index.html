@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Srima's Responsive Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="logo2.jpeg" alt="logo" class="logo" height="100">
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p><div id="animated-text">Web Developer</div></p>
+                <h1>Hi, I am <span>Srima Bose</span></h1>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col1">
+                    <img src="myimage.jpeg" alt="myimage">
+                </div>
+                <div class="about-col2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am passionate about leveraging my analytical skills to solve complex problems and create innovative web solutions.
+                        I have hands-on experience with various web technologies, including HTML, CSS, JavaScript, and frameworks such as React and Node. </p>
+
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <!-- <p class="tab-links">Experience</p> -->
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>JAVA</span><br>Data Structures & Algorithms</li>
+                                <li><span>Web Devlopment</span><br>Web Application Development</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>M.Sc.</span><br>Mathematics & Scientific Computing</li>
+                                <li><span>B.Sc.</span><br>Mathematics Honours</li>
+                            </ul>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="portfolio.jpeg" alt="portfolio_website">
+                    <div class="layer">
+                        <h3>Portfolio</h3>
+                        <p>Responsive Portfolio using HTML5,CSS,JS</p>
+                        <a href="#">🔗</a>
+                        
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="ecommerce.jpeg" alt="ecomerce_website">
+                    <div class="layer">
+                        <h3>E-Commerce Website</h3>
+                        <p>Shopping website created using </p>
+                        <a href="#">🔗</a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="button">See More</a>
+        </div>
+    </div>
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class=""sub-title>Contact Me</h1>
+                    <p><img src="gmail.512x511.png" alt="gmail" height="15px">srima.bose1309@gmail.com</p>
+                    <p><img src="phone.512x512.png" alt="phone" height="15px">8100189052</p>
+                    <div class="social-icons">
+                        <a href="https://github.com/srimabose"><img src="github.512x489.png" alt="github" height="30px" style="background-color:white;"></a>
+                        <a href="https://www.linkedin.com/in/srima-bose-1b0920223/"><img src="linkedin-original.512x512.png" alt="linkdin" height="30px"></a>
+                        <a href="https://www.instagram.com/srimabose/"><img src="instagram.512x512.png" alt="github" height="30px"></a>
+                    </div>
+                    <a href="Srima_Bose_Resume.pdf" download class="button button2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form method="POST" name="google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="button button2" name="Submit">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script>
+
+        var tablinks =document.getElementsByClassName("tab-links");
+        var tabcontents =document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzyXaKVbMXXIai8tYULqDW5LfMlFt9VCM9Pi61dpiaGz3wN3b7mrB8n_9xKXKUmNiw/exec'
+    const form = document.forms['google-sheet']
+    const msg=document.getElementById("msg")
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response =>{
+            msg.innerHTML="Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML=""
+            },1000)
+            form.reset()
+        } )
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+<script src="anime.js"></script>
+</body>
+</html>
