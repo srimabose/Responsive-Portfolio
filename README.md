@@ -12,7 +12,7 @@ This is my personal portfolio website. It showcases my projects, skills, and con
 
 ## Screenshots
 
-![Screenshot 1](Screenshot1.png)
+![Screenshot 1](Screenshot1.png|height=50)
 ![Screenshot 2](Screenshot2.png)
 ![Screenshot 7](Screenshot7.png)
 
