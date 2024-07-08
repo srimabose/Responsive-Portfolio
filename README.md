@@ -36,5 +36,10 @@ You can download my CV from the website.
 
 ## View in Small Screen
 
+On Clicking the Menu Icon the Navigation Menu will apear
+
+
+
+
 ![Screenshot 1](Screenshot1.png)
 ![Screenshot 9](Screenshot9.png)
