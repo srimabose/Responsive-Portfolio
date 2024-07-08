@@ -11,12 +11,16 @@
         <div class="container">
             <nav>
                 <img src="logo2.jpeg" alt="logo" class="logo" height="100">
-                <ul>
+                <ul id="sidemenu">
                     <li><a href="#header">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#portfolio">Portfolio</a></li>
                     <li><a href="#contact">Contact</a></li>
+                    <div class="fas cross" onclick="closemenu()">×</div>
                 </ul>
+                <div class="fas menu" onclick="openmenu()">☰</div>
+                
+                <!-- <i class="fa-solid fa-bars"></i> -->
             </nav>
             <div class="header-text">
                 <p><div id="animated-text">Web Developer</div></p>
@@ -76,7 +80,7 @@
                     <img src="ecommerce.jpeg" alt="ecomerce_website">
                     <div class="layer">
                         <h3>E-Commerce Website</h3>
-                        <p>Shopping website created using </p>
+                        <p>Shopping website created using HTML5,CSS, JS, React </p>
                         <a href="#">🔗</a>
                     </div>
                 </div>
@@ -149,6 +153,19 @@
         .catch(error => console.error('Error!', error.message))
     })
   </script>
+
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right="0";
+    }
+    function closemenu(){
+        sidemenu.style.right="-200px";
+    }
+</script>
+
 
 <script src="anime.js"></script>
 </body>
