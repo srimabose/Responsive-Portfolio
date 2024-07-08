@@ -33,3 +33,8 @@ You can download my CV from the website.
 
 ![Screenshot 6](Screenshot6.png)
 
+
+## View in Small Screen
+
+![Screenshot 1](Screenshot1.png)
+![Screenshot 9](Screenshot9.png)
