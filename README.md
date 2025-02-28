@@ -1,5 +1,9 @@
 # Responsive-Portfolio
-# Portfolio Website
+# Portfolio Website 
+
+## Live Demo
+[Click here to view the live demo](https://inspiring-entremet-4de5bf.netlify.app/)
+
 
 This is my personal portfolio website. It showcases my projects, skills, and contact information. The website is built using HTML, CSS and Javascript and is fully responsive.
 
